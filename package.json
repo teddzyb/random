@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev --turbopack -p 3001",
     "build": "next build --turbopack",
-    "start": "next start -p 20001",
+    "start:prod": "next start -p 20001",
+    "start:test": "next start -p 20002",
     "lint": "eslint"
   },
   "dependencies": {
