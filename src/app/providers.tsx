@@ -23,7 +23,6 @@ export function Providers({ children }: Readonly<{ children: React.ReactNode }>)
               base: "lg:bottom-[10px]! lg:right-[10px]!",
             },
           }}
-
         />
         {children}
       </NextThemesProvider>
