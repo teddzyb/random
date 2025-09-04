@@ -3,6 +3,7 @@ import { Inter, DM_Mono, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import NextTopLoader from "nextjs-toploader";
+import MainLayout from "./_components/layouts/MainLayout";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -32,12 +33,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${inter.variable} ${dmMono.variable} ${dmSans.variable} antialiased`}
-      >
+      <body className={`${inter.variable} ${dmMono.variable} ${dmSans.variable} antialiased`}>
         <Providers>
           <NextTopLoader color="#006FEE" showSpinner={false} />
-          {children}
+          <MainLayout>
+            {children}
+          </MainLayout>
         </Providers>
       </body>
     </html>
