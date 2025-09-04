@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, DM_Mono, DM_Sans } from "next/font/google";
+import { Inter, DM_Mono, DM_Sans, DynaPuff } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import NextTopLoader from "nextjs-toploader";
@@ -21,6 +21,11 @@ const dmSans = DM_Sans({
   variable: "--font-dm-sans",
 });
 
+const dynaPuff = DynaPuff({
+  subsets: ["latin"],
+  variable: "--font-dyna-puff",
+});
+
 export const metadata: Metadata = {
   title: "Random",
   description: "A clean and simple TRNG",
@@ -33,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} ${dmMono.variable} ${dmSans.variable} antialiased`}>
+      <body className={`${inter.variable} ${dmMono.variable} ${dmSans.variable} ${dynaPuff.variable} antialiased`}>
         <Providers>
           <NextTopLoader color="#006FEE" showSpinner={false} />
           <MainLayout>
