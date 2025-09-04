@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Geist_Mono, Archivo_Black } from "next/font/google";
+import { Inter, DM_Mono, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import NextTopLoader from "nextjs-toploader";
@@ -9,15 +9,15 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const geistMono = Geist_Mono({
+const dmMono = DM_Mono({
   subsets: ["latin"],
-  variable: "--font-geist-mono",
+  weight: ["300", "400", "500"],
+  variable: "--font-dm-mono",
 });
 
-const archivoBlack = Archivo_Black({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  weight: "400",
-  variable: "--font-archivo-black",
+  variable: "--font-dm-sans",
 });
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${geistMono.variable} ${archivoBlack.variable} antialiased`}
+        className={`${inter.variable} ${dmMono.variable} ${dmSans.variable} antialiased`}
       >
         <Providers>
           <NextTopLoader color="#006FEE" showSpinner={false} />
