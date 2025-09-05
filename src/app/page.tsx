@@ -20,8 +20,7 @@ export default function Home() {
         </h1>
         <p className="mt-4 text-lg text-default-700">
           <Logo />
-          {" "}
-          offers a suite of tools for generating true random outcomes, perfect for objective decisions, fair prize draws, and data randomization.
+          {" "}offers a suite of tools for generating true random outcomes, perfect for objective decisions, fair prize draws, and data randomization.
         </p>
 
         <div className="mt-6 max-w-56 w-full">

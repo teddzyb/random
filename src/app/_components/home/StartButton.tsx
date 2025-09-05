@@ -2,16 +2,19 @@
 
 import { Button } from "@heroui/react";
 import { ChevronRight } from "lucide-react";
+import ToolsPopover from "../common/ToolsPopover";
 
 const StartButton = () => {
   return (
-    <Button
-      color="primary"
-      endContent={<ChevronRight size={18} />}
-      className="w-full h-11"
-    >
-      Start Randomizing!
-    </Button>
+    <ToolsPopover popoverProps={{ placement: "right" }}>
+      <Button
+        color="primary"
+        endContent={<ChevronRight size={18} />}
+        className="w-full h-11"
+      >
+        Start Randomizing!
+      </Button>
+    </ToolsPopover>
   );
 }
 
