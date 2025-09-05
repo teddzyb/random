@@ -28,8 +28,8 @@ const dynaPuff = DynaPuff({
 });
 
 export const metadata: Metadata = {
-  title: "Random",
-  description: "A clean and simple TRNG",
+  title: "Random - Simply a true randomizer.",
+  description: "Random offers a suite of tools for generating true random outcomes, perfect for objective decisions, fair prize draws, and data randomization.",
 };
 
 export default function RootLayout({
