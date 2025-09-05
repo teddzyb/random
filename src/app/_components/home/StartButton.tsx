@@ -8,7 +8,7 @@ const StartButton = () => {
     <Button
       color="primary"
       endContent={<ChevronRight size={18} />}
-      className="w-full h-12"
+      className="w-full h-11"
     >
       Start Randomizing!
     </Button>
