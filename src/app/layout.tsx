@@ -18,6 +18,7 @@ const dmMono = DM_Mono({
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
+  weight: ["1000"],
   variable: "--font-dm-sans",
 });
 
