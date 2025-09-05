@@ -1,3 +1,4 @@
+import GradientText from "./_components/common/GradientText";
 import Logo from "./_components/common/Logo";
 
 export default function Home() {
@@ -5,7 +6,13 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center pt-14">
       <div className="flex flex-col gap-2 text-center max-w-xl">
         <h1 className="text-6xl font-heading font-black">
-          Simply a true randomizer.
+          Simply a
+          {" "}
+          <GradientText>
+            true
+          </GradientText>
+          {" "}
+          randomizer.
         </h1>
         <p className="mt-4 text-lg text-default-700">
           <Logo />
