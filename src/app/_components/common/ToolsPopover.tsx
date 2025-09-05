@@ -19,53 +19,83 @@ const ToolsPopover = (props: {
       {...popoverProps}
       radius="md"
       classNames={{
-        content: "p-2",
+        content: "p-0 overflow-hidden",
       }}
     >
       <PopoverTrigger>
         {children}
       </PopoverTrigger>
       <PopoverContent>
-        <Listbox
-          aria-label="Tools"
-          onAction={(key) => alert(key)}
-        >
-          <ListboxItem
-            key="decision-making"
-            description="Helps you make unbiased decisions"
-            endContent={<ChevronRight size={18} className="text-default-400" />}
-            classNames={listboxItemClasses}
+        <div className="flex">
+          <Listbox
+            aria-label="Tools"
+            onAction={(key) => alert(key)}
+            classNames={{
+              base: "p-3",
+              list: "gap-0",
+            }}
           >
-            For Decision Making
-          </ListboxItem>
+            <ListboxItem
+              key="decision-making"
+              description="Helps you make unbiased decisions"
+              startContent={<div className="w-12 h-12 shrink-0 bg-primary rounded-xl" />}
+              endContent={<ChevronRight size={18} className="text-default-400" />}
+              classNames={{
+                ...listboxItemClasses,
+                title: listboxItemClasses.title + " group-hover:text-primary",
+                base: "data-[hover=true]:bg-primary-50! rounded-xl group",
+              }}
+            >
+              For Decision Making
+            </ListboxItem>
 
-          <ListboxItem
-            key="creative-fun"
-            description="Designed to inspire creativity and add fun to your activities"
-            endContent={<ChevronRight size={18} className="text-default-400" />}
-            classNames={listboxItemClasses}
-          >
-            For Creative & Fun Tasks
-          </ListboxItem>
+            <ListboxItem
+              key="creative-fun"
+              description="Inspire creativity and add fun to your activities"
+              startContent={<div className="w-12 h-12 shrink-0 bg-secondary rounded-xl" />}
+              endContent={<ChevronRight size={18} className="text-default-400" />}
+              classNames={{
+                ...listboxItemClasses,
+                title: listboxItemClasses.title + " group-hover:text-secondary",
+                base: "data-[hover=true]:bg-secondary-50! rounded-xl group",
+              }}
+            >
+              For Creative & Fun Tasks
+            </ListboxItem>
 
-          <ListboxItem
-            key="daily-utility"
-            description="Useful for everyday tasks that require randomization"
-            endContent={<ChevronRight size={18} className="text-default-400" />}
-            classNames={listboxItemClasses}
-          >
-            For Daily Utility
-          </ListboxItem>
+            <ListboxItem
+              key="daily-utility"
+              description="Useful for everyday tasks that require randomization"
+              startContent={<div className="w-12 h-12 shrink-0 bg-warning rounded-xl" />}
+              endContent={<ChevronRight size={18} className="text-default-400" />}
+              classNames={{
+                ...listboxItemClasses,
+                title: listboxItemClasses.title + " group-hover:text-warning",
+                base: "data-[hover=true]:bg-warning-50! rounded-xl group",
+              }}
+            >
+              For Daily Utility
+            </ListboxItem>
 
-          <ListboxItem
-            key="learning-education"
-            description="Ideal for educational purposes and learning activities"
-            endContent={<ChevronRight size={18} className="text-default-400" />}
-            classNames={listboxItemClasses}
-          >
-            For Learning & Education
-          </ListboxItem>
-        </Listbox>
+            <ListboxItem
+              key="learning-education"
+              description="Ideal for educational purposes and learning activities"
+              startContent={<div className="w-12 h-12 shrink-0 bg-danger rounded-xl" />}
+              endContent={<ChevronRight size={18} className="text-default-400" />}
+              classNames={{
+                ...listboxItemClasses,
+                title: listboxItemClasses.title + " group-hover:text-danger",
+                base: "data-[hover=true]:bg-danger-50! rounded-xl group",
+              }}
+            >
+              For Learning & Education
+            </ListboxItem>
+          </Listbox>
+
+          <div className="flex-grow bg-default-100 w-full min-w-52 p-3">
+
+          </div>
+        </div>
       </PopoverContent>
     </Popover>
   );
