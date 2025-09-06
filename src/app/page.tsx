@@ -5,7 +5,7 @@ import StartButton from "./_components/home/StartButton";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center pt-14">
+    <div className="flex flex-col items-center justify-center pt-20">
       <div className="flex flex-col gap-2 text-center items-center max-w-xl">
         <h1 className="text-6xl font-heading font-black">
           Simply a{" "}

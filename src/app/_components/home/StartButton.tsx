@@ -6,7 +6,7 @@ import ToolsPopover from "../common/ToolsPopover";
 
 const StartButton = () => {
   return (
-    <ToolsPopover popoverProps={{ placement: "right" }}>
+    <ToolsPopover popoverProps={{ placement: "bottom" }}>
       <Button
         color="primary"
         endContent={<ChevronRight size={18} />}
