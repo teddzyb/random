@@ -24,7 +24,7 @@ export default function Home() {
           {" "}offers a suite of tools for generating true random outcomes, perfect for objective decisions, fair prize draws, and data randomization.
         </p>
 
-        <div className="mt-6 max-w-56 w-full">
+        <div className="flex flex-col gap-3 mt-6 max-w-56 w-full">
           <StartButton />
         </div>
       </BackgroundLines>

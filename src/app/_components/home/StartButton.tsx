@@ -6,15 +6,24 @@ import ToolsPopover from "../common/ToolsPopover";
 
 const StartButton = () => {
   return (
-    <ToolsPopover popoverProps={{ placement: "bottom" }}>
+    <>
+      <ToolsPopover popoverProps={{ placement: "bottom" }}>
+        <Button
+          color="primary"
+          endContent={<ChevronRight size={18} />}
+          className="w-full h-11"
+        >
+          Start Randomizing!
+        </Button>
+      </ToolsPopover>
+
       <Button
-        color="primary"
-        endContent={<ChevronRight size={18} />}
-        className="w-full h-11"
+        variant="bordered"
+        className="w-full h-11 border-1"
       >
-        Start Randomizing!
+        How does it work?
       </Button>
-    </ToolsPopover>
+    </>
   );
 }
 
