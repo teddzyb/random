@@ -1,6 +1,6 @@
-import GradientText from "./_components/common/GradientText";
+import GradientText from "./_components/text/GradientText";
 import Logo from "./_components/common/Logo";
-import ScrambledText from "./_components/common/ScrambledText";
+import ScrambledText from "./_components/text/ScrambledText";
 import StartButton from "./_components/home/StartButton";
 
 export default function Home() {
