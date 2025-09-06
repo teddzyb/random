@@ -20,6 +20,7 @@ const ToolsPopover = (props: {
   return (
     <Popover
       {...popoverProps}
+      onOpenChange={() => setSelectedCategory("decision-making")}
       radius="md"
       classNames={{
         content: "p-0 overflow-hidden",
