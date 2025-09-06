@@ -1,13 +1,12 @@
 import GradientText from "./_components/text/GradientText";
 import Logo from "./_components/common/Logo";
 import ScrambledText from "./_components/text/ScrambledText";
-import StartButton from "./_components/home/StartButton";
-import { BackgroundLines } from "./_components/background/BackgroundLines";
+import ToolList from "./_components/landing/ToolList";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center flex-grow">
-      <BackgroundLines className="flex flex-col gap-2 text-center items-center max-w-xl h-full mb-20">
+    <div className="flex flex-col items-center justify-center flex-grow gap-20 pb-10">
+      <div className="flex flex-col gap-2 text-center items-center max-w-2xl h-full">
         <h1 className="text-6xl font-heading font-black">
           Simply a{" "}
           <GradientText>
@@ -23,11 +22,9 @@ export default function Home() {
           <Logo />
           {" "}offers a suite of tools for generating true random outcomes, perfect for objective decisions, fair prize draws, and data randomization.
         </p>
+      </div>
 
-        <div className="flex flex-col gap-3 mt-6 max-w-56 w-full">
-          <StartButton />
-        </div>
-      </BackgroundLines>
+      {/* <ToolList /> */}
     </div>
   );
 }
