@@ -2,6 +2,7 @@
 
 import { toolLists } from "@/utils/config/toolsList";
 import { Popover, PopoverContent, PopoverTrigger, PopoverProps, Listbox, ListboxItem } from "@heroui/react";
+import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -42,6 +43,7 @@ const ToolsPopover = (props: {
               key="decision-making"
               description="Helps you make unbiased decisions"
               startContent={<Image src="/assets/palette.svg" alt="Palette" width={48} height={48} className="shrink-0" />}
+              endContent={<ChevronRight size={18} className="text-default-400" />}
               classNames={{
                 ...listboxItemClasses,
                 title: listboxItemClasses.title + " group-hover:text-primary",
@@ -56,6 +58,7 @@ const ToolsPopover = (props: {
               key="creative-fun"
               description="Inspire creativity and add fun to your activities"
               startContent={<Image src="/assets/confetti.svg" alt="Confetti" width={48} height={48} className="shrink-0" />}
+              endContent={<ChevronRight size={18} className="text-default-400" />}
               classNames={{
                 ...listboxItemClasses,
                 title: listboxItemClasses.title + " group-hover:text-warning",
@@ -70,6 +73,7 @@ const ToolsPopover = (props: {
               key="daily-utility"
               description="Useful for everyday tasks that require randomization"
               startContent={<Image src="/assets/hearts.svg" alt="Hearts" width={48} height={48} className="shrink-0" />}
+              endContent={<ChevronRight size={18} className="text-default-400" />}
               classNames={{
                 ...listboxItemClasses,
                 title: listboxItemClasses.title + " group-hover:text-danger",
@@ -84,6 +88,7 @@ const ToolsPopover = (props: {
               key="learning-education"
               description="Ideal for educational purposes and learning activities"
               startContent={<Image src="/assets/documents.svg" alt="Documents" width={48} height={48} className="shrink-0" />}
+              endContent={<ChevronRight size={18} className="text-default-400" />}
               classNames={{
                 ...listboxItemClasses,
                 title: listboxItemClasses.title + " group-hover:text-secondary",
