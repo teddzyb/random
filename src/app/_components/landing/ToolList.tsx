@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const ToolList = () => {
   return (
-    <div className="grid grid-cols-4 gap-8 w-full max-w-6xl">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-6xl">
       <div className="flex flex-col gap-6">
         <div className="flex items-center justify-center gap-3">
           <Image src="/assets/palette.svg" alt="Palette" width={24} height={24} className="shrink-0" />
