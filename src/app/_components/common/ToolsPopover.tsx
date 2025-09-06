@@ -33,7 +33,6 @@ const ToolsPopover = (props: {
         <div className="flex">
           <Listbox
             aria-label="Categories"
-            onAction={(key) => alert(key)}
             classNames={{
               base: "p-3",
               list: "gap-0",
