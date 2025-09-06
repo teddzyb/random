@@ -8,8 +8,8 @@ export const toolLists = {
     { key: "number-generator", label: "Number Generator" },
   ],
   "creative-fun": [
-    { key: "random-quote", label: "Random Quote" },
     { key: "raffle-winner-picker", label: "Raffle Winner Picker" },
+    { key: "random-quote", label: "Random Quote" },
     { key: "name-picker", label: "Name Picker" },
     { key: "color-picker", label: "Color Picker" },
     { key: "lorem-ipsum", label: "Lorem Ipsum" },
