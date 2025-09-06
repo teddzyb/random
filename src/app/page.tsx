@@ -5,8 +5,8 @@ import StartButton from "./_components/home/StartButton";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center pt-20">
-      <div className="flex flex-col gap-2 text-center items-center max-w-xl">
+    <div className="flex flex-col items-center justify-center flex-grow">
+      <div className="flex flex-col gap-2 text-center items-center max-w-xl h-full pb-20">
         <h1 className="text-6xl font-heading font-black">
           Simply a{" "}
           <GradientText>
@@ -27,6 +27,6 @@ export default function Home() {
           <StartButton />
         </div>
       </div>
-    </div >
+    </div>
   );
 }
