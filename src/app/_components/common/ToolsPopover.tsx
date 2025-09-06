@@ -41,7 +41,7 @@ const ToolsPopover = (props: {
             <ListboxItem
               key="decision-making"
               description="Helps you make unbiased decisions"
-              startContent={<Image src="/assets/palette.svg" alt="Palette" width={48} height={48} className="shrink-0 rounded-xl" />}
+              startContent={<Image src="/assets/palette.svg" alt="Palette" width={48} height={48} className="shrink-0" />}
               classNames={{
                 ...listboxItemClasses,
                 title: listboxItemClasses.title + " group-hover:text-primary",
@@ -55,7 +55,7 @@ const ToolsPopover = (props: {
             <ListboxItem
               key="creative-fun"
               description="Inspire creativity and add fun to your activities"
-              startContent={<Image src="/assets/confetti.svg" alt="Confetti" width={48} height={48} className="shrink-0 rounded-xl" />}
+              startContent={<Image src="/assets/confetti.svg" alt="Confetti" width={48} height={48} className="shrink-0" />}
               classNames={{
                 ...listboxItemClasses,
                 title: listboxItemClasses.title + " group-hover:text-warning",
@@ -69,7 +69,7 @@ const ToolsPopover = (props: {
             <ListboxItem
               key="daily-utility"
               description="Useful for everyday tasks that require randomization"
-              startContent={<Image src="/assets/hearts.svg" alt="Hearts" width={48} height={48} className="shrink-0 rounded-xl" />}
+              startContent={<Image src="/assets/hearts.svg" alt="Hearts" width={48} height={48} className="shrink-0" />}
               classNames={{
                 ...listboxItemClasses,
                 title: listboxItemClasses.title + " group-hover:text-danger",
@@ -83,7 +83,7 @@ const ToolsPopover = (props: {
             <ListboxItem
               key="learning-education"
               description="Ideal for educational purposes and learning activities"
-              startContent={<Image src="/assets/documents.svg" alt="Documents" width={48} height={48} className="shrink-0 rounded-xl" />}
+              startContent={<Image src="/assets/documents.svg" alt="Documents" width={48} height={48} className="shrink-0" />}
               classNames={{
                 ...listboxItemClasses,
                 title: listboxItemClasses.title + " group-hover:text-secondary",
